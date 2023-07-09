@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
  
 }
 body {
@@ -64,6 +65,9 @@ body {
   #xx{
     padding-top: 0%;
   }
+  .parallax{
+       height: fit-content;
+  }
  body,html{
   height: fit-content;
   width: fit-content;
@@ -71,31 +75,31 @@ body {
   .parent:first-of-type {
     background: #ffffff url("./images/1.png") no-repeat center center fixed;
     background-size: cover;
-  
+    height: 500px;
   
   }
   .parent:nth-of-type(2) {
     background: #ffffff url("./images/2.png") no-repeat center center fixed;
     background-size: cover;
-
+    height: 500px;
    
   }
   .parent:nth-of-type(3) {
     background: #ffffff url("./images/1.png") no-repeat center center fixed;
     background-size: cover;
-
+    height: 500px;
    
   }
   .parent:nth-of-type(4) {
     background: #ffffff url("./images/2.png") no-repeat center center fixed;
     background-size: cover;
-
+    height: 500px;
    
   }
   .parent:last-of-type {
     background: #ffffff url("./images/1.png") no-repeat center center fixed;
     background-size: cover;
-  
+    height: 500px;
     
   }
 }
