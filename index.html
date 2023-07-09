@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="./committe.css" rel="stylesheet">
+    <link href="./first.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" > </head>
+        <style>
+         
+     a{
+        text-decoration: none;
+     }
+     body,html{
+background-color: black;
+      margin-bottom: 0%;
+     overflow-wrap: normal;
+     }
+     .meow{
+      color: white;
+      align-items: center;
+      font-size: x-large;
+     
+      opacity: 100%;
+      text-decoration: none;
+      text-align: center;
+      margin-left: 12px;
+      margin-right: 12px;
+     }
+     section{
+      margin-bottom: 0%;
+     }
+     .dd{
+      opacity: 100%;
+      color: #d41367;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+     }
+     h1{
+      opacity: 100%;
+      color: black;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .sec{
+      opacity: 100%;
+      color: #d41367;
+      text-decoration: none;
+      font-family: 'Arial', sans-serif;
+      font-size: 60px;
+      background-color: black;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .bb{
+      margin-left: 90px;
+      margin-right: 0%;
+    }
+    .xx{
+      margin-left: 0%;
+      margin-right: 95%;
+    }
+   
+        </style>
+          
+          <body>
+         
+            <section >     
+
+    <div class="parent clearfix">
+      <div class="parallex" id="xx">
+      <h1 >VOCATIONAL SERVICES</h1>
+      <p class="meow">Vocational services offers numerous benefits and opportunities for personal and professional growth. Vocational services, helps to contribute to the community by utilizing your skills, knowledge, and expertise to make a positive impact.
+        </p>
+     
+      </div>
+    </div>
+    
+    <div class="parent dd">
+      <div>
+      <h1 class="dd">CLUB SERVICES</h1>
+      <p class="meow">The Club Services Committee is an essential component of a Rotaract Club, dedicated to ensuring the smooth functioning and development of the club. This committee plays a vital role in organizing internal activities and managing the club's infrastructure.
+       </p>
+   
+      </div>
+    </div>
+    
+    <div class="parent">
+      <div>
+      <h1> COMMUNITY SERVICES</h1>
+      <p class="meow">We tackle pressing social issues, uplift marginalized groups, and bring hope to those in need.We aim to make a tangible difference in the lives of others. From organizing volunteer events to partnering with local organizations, everyone can contribute to a cause they resonate with.</p>
+ 
+      </div>
+    </div>
+    
+    <div class="parent dd">
+      <div>
+      <h1 class="dd">INTERNATIONAL SERVICES</h1>
+      <p class="meow">International Services augments cordial relations with other Rotaract clubs, both national and international. We  advocate cultural appreciation and mutual cooperation. Being a part of the committee can give you the opportunity to cultivate social, interpersonal and marketing skills.</p>
+
+      </div>
+    </div>
+    
+    <div class="parent">
+      <div>
+      <h1>EDITORIAL BOARD</h1>
+      <p class="meow">Playing the vital role , handling the social media presence and designing the content, the editorial board will forever be one of the main pillars to bring about the club’s success. To ensure real-time reporting, broadcasting, and event management.</p>
+
+      </div>
+    </div>
+
+</section>
+
+ 
+    
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+<script>
+$(function() {
+"use strict";
+// All Variable ==========================================================================
+var parallex = $(".parent > .parallex");
+// Scroll ================================================================================
+
+$(window).on('scroll', function() {
+  parallex.css({
+    "transform": "translate(0, " + $(window).scrollTop() + "px)"
+  });
+  if ($('.parent > div').offset.top() >= $(window).scrollTop()) {
+    parallex = $(".parent > .parallex, .parent > div");
+  }
+});
+
+});
+</script>
+</html>
